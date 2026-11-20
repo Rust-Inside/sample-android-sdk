@@ -2,11 +2,11 @@
 
 [English](README.md) | [한국어](README.ko.md)
 
-Kotlin에서 `account.getMe()`를 호출하면 로그인한 사용자의 프로필을 받습니다. Rust Inside는 샘플 Rust 라이브러리로 Android SDK를 빌드해 이 저장소에 AAR로 배포합니다. AAR에는 Kotlin 바인딩과 `arm64-v8a`·`x86_64`용 네이티브 라이브러리가 들어 있습니다. Android API 23 이상을 지원합니다. [Rust 구현](https://github.com/Rust-Inside/sample-rust-core/blob/main/src/api.rs)
+Kotlin에서 `account.getMe()`를 호출하면 로그인한 사용자의 프로필을 받습니다. Rust Inside는 샘플 Rust 라이브러리로 Android SDK를 빌드해 이 저장소에 AAR로 배포합니다. AAR에는 Kotlin 바인딩과 `arm64-v8a`·`x86_64`용 네이티브 라이브러리가 들어 있습니다. Android API 23 이상을 지원합니다. [Rust 구현](https://github.com/Rust-Inside/sample-rust-core/blob/v0.2.0/src/api.rs)
 
 ## Gradle에 추가하기
 
-Gradle이 GitHub Releases에서 AAR과 Ivy 메타데이터를 직접 받습니다. `settings.gradle.kts`의 `dependencyResolutionManagement.repositories`에 아래 Ivy 저장소를 추가하세요. 같은 블록에 `mavenCentral()`도 있어야 Kotlin, 코루틴, JNA 의존성을 받을 수 있습니다. [v0.1.0 릴리스](https://github.com/Rust-Inside/sample-android-sdk/releases/tag/v0.1.0)
+Gradle이 GitHub Releases에서 AAR과 Ivy 메타데이터를 직접 받습니다. `settings.gradle.kts`의 `dependencyResolutionManagement.repositories`에 아래 Ivy 저장소를 추가하세요. 같은 블록에 `mavenCentral()`도 있어야 Kotlin, 코루틴, JNA 의존성을 받을 수 있습니다. [v0.2.0 릴리스](https://github.com/Rust-Inside/sample-android-sdk/releases/tag/v0.2.0)
 
 ```kotlin
 ivy {
@@ -24,7 +24,7 @@ ivy {
 
 ```kotlin
 dependencies {
-    implementation("dev.rustinside.sample_rust_coresdk:sample-rust-core-android:0.1.0")
+    implementation("dev.rustinside.sample_rust_coresdk:sample-rust-core-android:0.2.0")
 }
 ```
 
