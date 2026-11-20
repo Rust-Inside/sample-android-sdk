@@ -1,6 +1,6 @@
 # Sample Rust Core · Android SDK
 
-[English](README.md) | [한국어](README.ko.md)
+[English](README.md)
 
 Kotlin에서 `account.getMe()`를 호출하면 로그인한 사용자의 프로필을 받습니다. Rust Inside는 샘플 Rust 라이브러리로 Android SDK를 빌드해 이 저장소에 AAR로 배포합니다. AAR에는 Kotlin 바인딩과 `arm64-v8a`·`x86_64`용 네이티브 라이브러리가 들어 있습니다. Android API 23 이상을 지원합니다. [Rust 구현](https://github.com/Rust-Inside/sample-rust-core/blob/v0.2.0/src/api.rs)
 

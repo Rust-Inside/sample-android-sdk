@@ -1,6 +1,6 @@
 # Sample Rust Core · Android SDK
 
-[English](README.md) | [한국어](README.ko.md)
+[한국어](README.ko.md)
 
 Call `account.getMe()` from Kotlin to fetch the signed-in user's profile. Rust Inside builds the Android SDK from the sample Rust library and publishes it here as an AAR. The package includes the Kotlin bindings and native libraries for `arm64-v8a` and `x86_64`. It requires Android API level 23 or later. [Rust implementation](https://github.com/Rust-Inside/sample-rust-core/blob/v0.2.0/src/api.rs)
 
